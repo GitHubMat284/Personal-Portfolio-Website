@@ -1,0 +1,32 @@
+{
+  "name": "portfolio-matheo",
+  "version": "1.0.0",
+  "description": "This project involves creating a responsive portfolio website using JavaScript, HTML and CSS",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GitHubMat284/Personal-Portfolio-Website.git"
+  },
+  "keywords": [
+    "portfolio",
+    "website",
+    "personal",
+    "site",
+    "HTML",
+    "CSS",
+    "JavaScript"
+  ],
+  "author": "Matheo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GitHubMat284/Personal-Portfolio-Website/issues"
+  },
+  "homepage": "https://github.com/GitHubMat284/Personal-Portfolio-Website#readme",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}
