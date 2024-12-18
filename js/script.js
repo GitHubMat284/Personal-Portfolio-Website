@@ -1,4 +1,4 @@
-alert("This website is under construction! Thanks for trying the demo!");
+// alert("This website is under construction! Thanks for trying the demo!");
 // document.addEventListener("DOMContentLoaded", function() {
 
 //     const hireMeButton = document.getElementById("hireMeButton"); // Getting ID of the button element
