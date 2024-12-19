@@ -1,10 +1,13 @@
 // alert("This website is under construction! Thanks for trying the demo!");
-// document.addEventListener("DOMContentLoaded", function() {
 
-//     const hireMeButton = document.getElementById("hireMeButton"); // Getting ID of the button element
+/* Typing Animations */
 
-//     hireMeButton.addEventListener("click", function(event) {
-//         event.preventDefault(); // Temporary until Contact section is added
-//         alert("Contact me at: villacrm@umanitoba.ca");
-//     });
-// });
+var typed = new Typed(".typing", {
+    
+    strings:["Cybersecurity Enthusiast", "Aspiring Web Developer", "Aspiring Game Developer"],
+    typeSpeed: 100,
+    backSpeed: 50,
+    loop: true,
+    cursorChar: "_",
+    startDelay: 1000
+});

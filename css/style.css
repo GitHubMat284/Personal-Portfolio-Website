@@ -1,10 +1,19 @@
 :root {  
     /* Just some variables for colors in our webpage we will use */
-    --bg-black-900:#61617071; 
+    --bg-black-900:#f2f2fc; 
     --bg-black-100:#fdf9ff;
     --bg-black-50:#e8dfec;
     --text-black-900:#302e4d;
     --text-black-700:#504e70;
+}
+
+body.dark{  
+        /* Just some variables for colors in our webpage we will use */
+        --bg-black-900:#151515; 
+        --bg-black-100:#222222;
+        --bg-black-50:#393939;
+        --text-black-900:#ffffff;
+        --text-black-700:#e9e9e9;
 }
 
 body {
@@ -349,10 +358,22 @@ h3.my-profession {
 .about .about-content .about-text h3 {
     font-size: 24px;
     margin-bottom: 15px;
+    font-weight: 700;
+    color: var(--text-black-900);
+}
+
+.about .about-content .about-text h3 span {
+    color: var(--skin-color);
+}
+
+.about .about-content .about-text p {
+    font-size: 16px;
+    list-style: 25px;
+    color: var(--text-black-700);
 }
 
 .about .about-content .personal-info{
-    flex: 0 0 50%;
+    flex: 0 0 60%;
     max-width: 60%;
     margin-top: 40px;
 }
