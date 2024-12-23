@@ -1,4 +1,4 @@
-// alert("This website is under construction! Thanks for trying the demo!");
+alert("This website is under construction! Thanks for trying the demo!");
 
 /* Typing Animations */
 
