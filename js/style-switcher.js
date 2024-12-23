@@ -31,11 +31,11 @@ const dayNightMode = document.querySelector(".day-night");
 dayNightMode.addEventListener("click",() => {
     dayNightMode.querySelector("i").classList.toggle("fa-sun");
     dayNightMode.querySelector("i").classList.toggle("fa-moon");
-    document.body.classList.toggle("dark");
+    document.body.classList.toggle("light");
 });
 
 window.addEventListener("load", () => {
-    if(document.body.classList.contains("dark")){
+    if(document.body.classList.contains("light")){
         dayNightMode.querySelector("i").classList.add("fa-sun");
     } else {
         dayNightMode.querySelector("i").classList.add("fa-moon");
