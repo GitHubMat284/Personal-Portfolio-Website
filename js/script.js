@@ -81,6 +81,14 @@ document.querySelector(".hire-me").addEventListener("click", function(){
     addBackSection(sectionIndex);
 });
 
+document.querySelector(".msg-me").addEventListener("click", function(){
+    const sectionIndex = this.getAttribute("data-section-index");
+    showSection(this);
+    updateNav(this);
+    removeBackSection();
+    addBackSection(sectionIndex);
+});
+
 const navTogglerBtn = document.querySelector(".nav-toggler"),
     aside = document.querySelector(".aside");
 navTogglerBtn.addEventListener("click", () => {
