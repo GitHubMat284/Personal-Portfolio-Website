@@ -446,32 +446,32 @@
                     <h3 class="contact-title padd-15">SEND ME AN EMAIL</h3>
                     <h4 class="contact-sub-title padd-15">I'M VERY RESPONSIVE TO MESSAGES</h4>
                     <!-- Contact Form -->
-                     <div class="row">
-                        <div class="contact-form padd-15" onsubmit="sendEmail(); reset(); return false;">
-                            <!-- Start Form -->
+                    <div class="row">
+                        <form class="contact-form padd-15" action="https://api.web3forms.com/submit" method="POST">
+                            <input type="hidden" name="access_key" value="65e67b4f-177f-429a-9c72-eb39c2facf5d">
                             <div class="row">
                                 <div class="form-item col-6 padd-15">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" id="name" placeholder="Name">
+                                        <input type="text" class="form-control" name="name" placeholder="Name" required>
                                     </div>
                                 </div>
                                 <div class="form-item col-6 padd-15">
                                     <div class="form-group">
-                                        <input type="email" class="form-control" id="email" placeholder="Email">
+                                        <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="form-item col-12 padd-15">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" id="subject" placeholder="Subject">
+                                        <input type="text" class="form-control" name="subject" placeholder="Subject" required>
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="form-item col-12 padd-15">
                                     <div class="form-group">
-                                        <textarea class="form-control" id="msg" placeholder="Message"></textarea>
+                                        <textarea class="form-control" id="message" name="message" placeholder="Message" required></textarea>
                                     </div>
                                 </div>
                             </div>
@@ -480,9 +480,8 @@
                                     <button type="submit" class="btn">Send Message</button>
                                 </div>
                             </div>
-                            <!-- End Form -->
-                        </div>
-                     </div>
+                        </form>
+                    </div>
                 </div>
             </div>
             <!-- Contact Section End-->
@@ -512,23 +511,6 @@
     </div>
     <!-- Style Switcher End -->   
     <!--Js files, at end of body as best practice--> 
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script>
-        function sendEmail(){
-            Email.send({
-                Host : "smtp.gmail.com",
-                Username : "matius12345678@hotmail.com",
-                // Password : "password",
-                To : 'matheojavier15@gmail.com',
-                From : document.getElementById("email").value,
-                Subject : "New Contact Form Inquiry",
-                Body : "Name: " + document.getElementById("name").value
-                    + "<br>Email: " + document.getElementById("email").value
-                    + "<br>Subject: " + document.getElementById("subject").value
-                    + "<br>Message: " + document.getElementById("msg").value
-            }).then(message => alert("Message Sent Successfully!"));
-        }
-    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js" integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="js\script.js"></script>
     <script src="js/style-switcher.js"></script>
