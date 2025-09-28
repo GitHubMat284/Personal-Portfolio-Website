@@ -416,6 +416,10 @@ h3.my-profession {
     color: var(--text-black-700);
 }
 
+.about .about-content .about-text p.next-paragraph {
+    margin-top: 15px;
+}
+
 .about .about-content .personal-info{
     flex: 0 0 60%;
     max-width: 60%;
@@ -429,10 +433,20 @@ h3.my-profession {
 
 .about .about-content .personal-info .info-item p {
     font-weight: 600;
-    padding: 10px 0;
+    padding: 25px 0;
     font-size: 16px;
     color: var(--text-black-900);
     border-bottom: 1px solid var(--bg-black-50);
+}
+
+.about .about-content .personal-info .info-item p a {
+    font-weight: inherit;
+    font-size: inherit;
+    color: inherit;
+}
+
+.about .about-content .personal-info .info-item p a:hover {
+    text-decoration: underline; /* Just for hover effect */
 }
 
 .about .about-content .personal-info .info-item p span {
@@ -454,7 +468,7 @@ h3.my-profession {
 .about .about-content .skills{
     flex: 0 0 40%;
     max-width: 40%;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 .about .about-content .skills .skill-item {
@@ -712,6 +726,16 @@ h3.my-profession {
     line-height: 25px;
     color: var(--text-black-700);
     font-weight: 400;
+}
+
+.contact .contact-info-item p a {
+    font-weight: inherit;
+    font-size: inherit;
+    color: inherit;
+}
+
+.contact .contact-info-item p a:hover {
+    text-decoration: underline; /* Again, Matheo is adding this just for hover effect ☺ */
 }
 
 .contact .contact-form {
