@@ -847,4 +847,12 @@ h3.my-profession {
         flex: 0 0 100%;
         max-width: 100%;
     }
+
+    .home .home-info .btn {
+        margin-bottom: 20px;   /* space between buttons */
+    }
+
+    .home .home-info .btn:last-child {
+        margin-bottom: 0;    /* no margin from last button */
+    }
 }
